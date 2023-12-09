@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CampusConnect - Teacher</title>
+    <link rel="stylesheet" href="teacher.css">
+</head>
+<body>
+    <header>
+        <h1>CampusConnect</h1>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="addStudent.html">Add Student</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li class="active"><a href="#">Teacher</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="examMarks.html">Exam Marks</a></li>
+                <li class="logout"><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <h2>Teacher List</h2>
+            <table class="teacher-table">
+                <thead>
+                    <tr>
+                        <th>Teacher Name</th>
+                        <th>Email</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John Doe</td>
+                        <td>johndoe@example.com</td>
+                        <td>
+                            <button onclick="showRoutine()" class="routine-btn">View Routine</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Jane Doe</td>
+                        <td>janedoe@example.com</td>
+                        <td>
+                            <button onclick="showRoutine()" class="routine-btn">View Routine</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Bob Smith</td>
+                        <td>bobsmith@example.com</td>
+                        <td>
+                            <button class="routine-btn" onclick="showRoutine()">View Routine</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <button class="add-teacher-btn">Add Teacher</button>
+        </div>
+        
+    </div>
+
+    <!-- Pop-up window for routine -->
+    <div id="routine-popup" class="popup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="hideRoutine()">&times;</span>
+            <h3>Teacher Routine</h3>
+            <p>Here's the routine for <span class="teacher-name-popup"></span>:</p>
+            <img src="routine.jpg" alt="Teacher Routine">
+        </div>
+    </div>
+
+    <script>
+        // Function to show routine pop-up window
+        function showRoutine() {
+            var popup = document.getElementById("routine-popup");
+            popup.style.display = "block";
+
+            // Get the teacher's name from the table row that was clicked
+            var teacherName = event.target.parentElement.parentElement.querySelector("td:first-child").textContent;
+
+            // Set the teacher's name in the popup window
+            var teacherNamePopup = document.querySelector(".teacher-name-popup");
+            teacherNamePopup.textContent = teacherName;
+}
+
+
+        // Function to hide routine pop-up window
+        function hideRoutine() {
+            var popup = document.getElementById("routine-popup");
+            popup.style.display = "none";
+        }
+    </script>
+</body>
+</html>

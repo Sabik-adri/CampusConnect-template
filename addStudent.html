@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addStudent.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="addStudent.js"></script>
+    <title>CampusConnect</title>
+</head>
+<body>
+    <header>
+        <h1 style="margin:0;">CampusConnect</h1>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="addStudent.html">Add Student</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="teacher.html">Teacher</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="examMarks.html">Exam Marks</a></li>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li class="logout"><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="main container-fluid">
+            <div class="row">
+                <div class="col-md-6 offset-md-3">
+                    <hr>
+                    <h2 class="text-center">Add Student</h2>
+                    <hr>
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name">
+                        </div>
+                        <div class="form-group">
+                            <label for="parent">Parent</label>
+                            <input type="text" class="form-control" id="parent">
+                        </div>
+                        <div class="form-group">
+                            <label for="course">Course</label>
+                            <input type="text" class="form-control" id="course">
+                        </div>
+                        <div class="form-group">
+                            <label for="section">Section</label>
+                            <input type="text" class="form-control" id="section">
+                        </div>
+                        <div class="form-group">
+                            <label for="id">ID</label>
+                            <input type="text" class="form-control" id="id">
+                        </div>
+                        <div class="form-group">
+                            <label for="birthdate">Birthdate</label>
+                            <input type="date" class="form-control" id="birthdate">
+                        </div>
+                        <div class="form-group">
+                            <label for="gender">Gender</label>
+                            <select class="form-control" id="gender">
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div>
+    
+
+
+
+                        <div class="form-group">
+                            <label for="address">Address</label>
+                            <input type="text" class="form-control" id="address">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="text" class="form-control" id="phone">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Add Student</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+      
+</div>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js"></script>
+
+    <title>CampusConnect</title>
+</head>
+<body>
+    <header>
+        <h1 style="margin:0;">CampusConnect</h1>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="addStudent.html">Add Student</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="teacher.html">Teacher</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="examMarks.html">Exam Marks</a></li>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li class="logout"><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="row">
+                <button onclick="goToDashboard()" class="dashboard">Dashboard</button>
+                <button onclick="goToCourses()" class="courses">Courses</button>
+                <button onclick="goToStudent()" class="student">Student</button>
+              </div>
+              <div class="row">
+                <button onclick="goToTeacher()" class="teacher">Teacher</button>
+                <button onclick="goToAttendance()" class="attendance">Attendance</button>
+                <button onclick="goToExamMarks()" class="exam-marks">Exam Marks</button>
+              </div>
+              
+        </div>
+    </div>
+</body>
+</html>

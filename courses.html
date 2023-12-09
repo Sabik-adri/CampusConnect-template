@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="courses.css">
+    <script src="courses.html"></script>
+    <title>CampusConnect</title>
+</head>
+<body>
+    <header>
+        <h1 style="margin:0;">CampusConnect</h1>
+    </header>
+    <div class="wrapper">
+        <div class="sidebar">
+            <ul>
+                <li><a href="index.html">Dashboard</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="addStudent.html">Add Student</a></li>
+                <li><a href="student.html">Student</a></li>
+                <li><a href="teacher.html">Teacher</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="examMarks.html">Exam Marks</a></li>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br>
+                <li class="logout"><a href="#">Log Out</a></li>
+            </ul>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="line"></div>
+                <div class="title">Courses
+                    <div class="dropdown">
+                        <button class="dropbtn">Required Courses</button>
+                        <div class="dropdown-content">
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                      </div>                          
+                    </div>
+                </div>
+                <div class="line"></div>
+                <table>
+                    <tr>
+                        <th>Course Name</th>
+                        <th>Course ID</th>
+                        <th>Time Slot</th>
+                        <th>Prerequisite</th>
+                    </tr>
+                    <tr>
+                        <td>Introduction to Computer Science</td>
+                        <td>CSCI 101</td>
+                        <td>MWF 10:00-11:00</td>
+                        <td>None</td>
+                    </tr>
+                    <tr>
+                        <td>Discrete Mathematics</td>
+                        <td>MATH 230</td>
+                        <td>MWF 11:00-12:00</td>
+                        <td>CSCI 101</td>
+                    </tr>
+                    <tr>
+                        <td>Data Structures and Algorithms</td>
+                        <td>CSCI 201</td>
+                        <td>TTH 9:30-11:00</td>
+                        <td>CSCI 101, MATH 230</td>
+                    </tr>
+                    <tr>
+                        <td>Artificial Intelligence</td>
+                        <td>CSCI 415</td>
+                        <td>TTH 11:00-12:30</td>
+                        <td>CSCI 201</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
